@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikigai Studios</title>
+    <link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/navbar.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel = "icon" href = "../assets/images/ikigai_icon1.png" type = "image/x-icon">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script>
+	
+		function cookie()
+		{
+			document.cookie = "user = john";
+		}
+	
+	</script>
+	
+</head>
+
+<body onLoad="cookie()">
+
+	<!--------------------------- Navbar --------------------------------------->
+	
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+    <div class="menu">
+        <div class="menu-inner">
+            <ul class="menu-nav">
+                <li class="menu-nav-item"><a class="menu-nav-link" href="#home"><span>
+                            <div>Home</div>
+                        </span></a></li>
+                <li class="menu-nav-item"><a class="menu-nav-link" href="#about"><span>
+                            <div>About</div>
+                        </span></a></li>
+                <li class="menu-nav-item"><a class="menu-nav-link" href="#portfolio"><span>
+                            <div>Portfolio</div>
+                        </span></a></li>
+				<li class="menu-nav-item"><a class="menu-nav-link" href="#makers"><span>
+                            <div>The Makers</div>
+                        </span></a></li>
+                <li class="menu-nav-item"><a class="menu-nav-link" href="#contact"><span>
+                            <div>Contact Us</div>
+                        </span></a></li>
+            </ul>
+            <div class="gallery">
+                <div class="title">
+                    <p>Ikigai Studios</p>
+                </div>
+                <div class="images">
+                    <a class="image-link" href="aot.html">
+                        <div class="image" data-label="Attack on Titan">
+							<img src="../assets/images/AOT/Levi_bridge.png" alt="Attack on Titan">
+						</div>
+                    </a>
+                    <a class="image-link" href="jujutsu.html">
+                        <div class="image" data-label="Jujutsu Kaisen">
+							<img src="../assets/images/Jujutsu/Jujutsu_1.jpg" alt="Jujutsu Kaisen">
+						</div>
+                    </a>
+                    <a class="image-link" href="got.html">
+                        <div class="image" data-label="Game of Thrones">
+							<img src="../assets/images/GOT/game_of_thrones_1.jpg" alt="Game of Thrones">
+						</div>
+                    </a>
+                    <a class="image-link" href="peaky.html">
+                        <div class="image" data-label="Peaky Blinders">
+							<img src="../assets/images/Peaky/peaky_1.jpg" alt="Peaky Blinders">
+						</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script>
+		function hideMenu()
+		{
+			let menuOpen = document.querySelector('#burger-toggle').checked;
+
+			if(menuOpen = true)
+			{
+				document.querySelector('#burger-toggle').checked = false;
+			}
+		}
+		window.addEventListener("scroll", hideMenu);
+	
+	</script>
+	
+	
+    <div class="main">
+        
+	<!--------------------------------- Hero Image ---------------------------------------------->
+		
+		<div class="hero" id="home">
+			<div class="centered">Ikigai Studios</div>
+            <div id="particles-js"></div> 
+			<img id="tree" src="../assets/images/hero_image.png" alt="x">
+		</div>
+		
+		<script src="../js/particles.js"></script>
+		<script src="../js/app.js"></script>
+		
+		<!--------------------------------- About ---------------------------------------------->
+		
+		<div class="about" id="about">
+			<div class="aboutcolumn">
+				<div class="aboutrow">
+					<div class="aboutcell">
+						<h1>IKIGAI</h1>
+						<h1>STUDIOS</h1>		
+					</div>
+					<div class="aboutcell">
+						<p>
+							Ikigai Studios has been at the forefront of the motion picture and animation industry since its inception and continues to be a leading creative force in the industry.
+							<br><br>
+							Ikigai Studios produces and distributes a wide-ranging slate of TV Shows and Anime each year. Ikigai Studio either fully finances or co-finances the films it produces and maintains worldwide distribution rights.
+							<br><br>
+							Among Ikigai Studio's vast Portfolio are major names such as Attack on Titan, Jujutsu Kaisen, Game of Thrones, Peaky Blinders.
+						</p>
+					</div>
+				</div>
+				
+				<img src="../assets/images/Ikigai_logo.png" alt="Ikigai Logo">
+			</div>
+		</div>
+		
+		<!------------------------------- Portfolio ---------------------------------------------->
+		
+		<div class="portfolio" id="portfolio">
+			
+			<div class="portfoliorow">
+				<div class="portfoliocell" onmouseover="aot()" onmouseout="aot1()">
+					<div class="showname" id="aottitle">
+						<a href="aot.html" class="portfoliocell">Attack on Titan</a>
+					</div>
+					<a href="aot.html" class="portfoliocell">
+						<!--<img src="../assets/images/AOT/Levi_bridge.png" alt="Attack on Titan" style="object-position: center 40%;" id="aotimage">-->
+						<img src="../assets/images/AOT/aot_3.jpg" alt="Attack on Titan" style="object-position: center 65%;" id="aotimage">
+						
+					</a>
+				</div>
+				
+				<div class="portfoliocell" onmouseover="jjk()" onmouseout="jjk1()">
+					<div class="showname" id="jjktitle">
+						<a href="jujutsu.html" class="portfoliocell">Jujutsu Kaisen</a>
+					</div>
+					<a href="jujutsu.html" class="portfoliocell">
+						<!--<img src="../assets/images/Jujutsu/Jujutsu_1.jpg" alt="Jujutsu Kaisen" style="object-position: center 55%;" id="jjkimage">-->
+						<img src="../assets/images/Jujutsu/Jujutsu_3.jpg" alt="Jujutsu Kaisen" style="object-position: center 55%;" id="jjkimage">
+					</a>
+				</div>
+			</div>
+			
+			<div class="portfoliorow">
+				<div class="portfoliocell" onmouseover="got()" onmouseout="got1()">
+					<div class="showname" id="gottitle">
+						<a href="got.html" class="portfoliocell">Game of Thrones</a>
+					</div>
+					<a href="got.html" class="portfoliocell">
+						<!--<img src="../assets/images/GOT/game_of_thrones_1.jpg" alt="Game of Thrones" style="object-position: center center;" id="gotimage">-->
+						<img src="../assets/images/GOT/game_of_thrones_3.jpg" alt="Game of Thrones" style="object-position: center center;" id="gotimage">
+					</a>
+				</div>
+				
+				<div class="portfoliocell" onmouseover="peaky()" onmouseout="peaky1()">
+					<div class="showname" id="peakytitle">
+						<a href="peaky.html" class="portfoliocell">Peaky Blinders</a>
+					</div>
+					<a href="peaky.html" class="portfoliocell">
+						<!--<img src="../assets/images/Peaky/peaky_1.jpg" alt="Peaky Blinders" style="object-position: center 20%;" id="peakyimage">-->
+						<img src="../assets/images/Peaky/peaky_2.jpg" alt="Peaky Blinders" style="object-position: center 20%;" id="peakyimage">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+
+		<script>
+			function aot()
+			{
+				document.getElementById("aottitle").setAttribute("style","opacity:1; z-index:99; transition: opacity 2s, z-index 2s ease-in-out;");
+				document.getElementById("aotimage").setAttribute("style","object-position: center 65%; transform: scale(1.5); filter: brightness(50%); transition: transform 1.5s, filter 1.5s ease-in-out;");
+			}
+			
+			function aot1()
+			{
+				document.getElementById("aottitle").setAttribute("style","opacity:0; z-index:99; transition: opacity 2s, z-index 2s ease-in-out;");
+				document.getElementById("aotimage").setAttribute("style","object-position: center 65%; transform: scale(1); filter: brightness(100%); transition: transform 1.5s, filter 1.5s ease-in-out;");
+			}
+			
+			function jjk()
+			{
+				document.getElementById("jjktitle").setAttribute("style","opacity:1; z-index:99; transition: opacity 2s, z-index 2s ease-in-out;");
+				document.getElementById("jjkimage").setAttribute("style","object-position: center 55%; transform: scale(1.5); filter: brightness(50%); transition: transform 1.5s, filter 1.5s ease-in-out;");
+			}
+			
+			function jjk1()
+			{
+				document.getElementById("jjktitle").setAttribute("style","opacity:0; z-index:99; transition: opacity 2s, z-index 2s ease-in-out;");
+				document.getElementById("jjkimage").setAttribute("style","object-position: center 55%; transform: scale(1); filter: brightness(100%); transition: transform 1.5s, filter 1.5s ease-in-out;");
+			}
+			
+			function got()
+			{
+				document.getElementById("gottitle").setAttribute("style","opacity:1; z-index:99; transition: opacity 2s, z-index 2s ease-in-out;");
+				document.getElementById("gotimage").setAttribute("style","object-position: center center; transform: scale(1.5); filter: brightness(50%); transition: transform 1.5s, filter 1.5s ease-in-out;");
+			}
+			
+			function got1()
+			{
+				document.getElementById("gottitle").setAttribute("style","opacity:0; z-index:99; transition: opacity 2s, z-index 2s ease-in-out;");
+				document.getElementById("gotimage").setAttribute("style","object-position: center center; transform: scale(1); filter: brightness(100%); transition: transform 1.5s, filter 1.5s ease-in-out;");
+			}
+			
+			function peaky()
+			{
+				document.getElementById("peakytitle").setAttribute("style","opacity:1; z-index:99; transition: opacity 2s, z-index 2s ease-in-out;");
+				document.getElementById("peakyimage").setAttribute("style","object-position: center 20%; transform: scale(1.5); filter: brightness(50%); transition: transform 1.5s, filter 1.5s ease-in-out;");
+			}
+			
+			function peaky1()
+			{
+				document.getElementById("peakytitle").setAttribute("style","opacity:0; z-index:99; transition: opacity 2s, z-index 2s ease-in-out;");
+				document.getElementById("peakyimage").setAttribute("style","object-position: center 20%; transform: scale(1); filter: brightness(100%); transition: transform 1.5s, filter 1.5s ease-in-out;");
+			}
+		</script>
+		
+		<!------------------------------------------------ Makers -------------------------------------------------------->
+		
+		<div class="makers" id="makers">
+		
+			<div class="makersheading">
+				<h1>The Makers</h1>
+			</div>
+			<div class="makersrow">
+				<div class="makerscell" style="flex:1; justify-content: flex-start;   " >
+					<img src="../assets/images/yash.jpg" alt="yash">
+					<h2>Yash Katariya</h2>
+					<h4><i>"Those who dont follow the rules are scum  but those who abandon their friends are worse than scum<br><br> - Hatake Kakashi"</i></h4>
+				</div>	
+				<div class="makerscell" style="flex:1; justify-content: flex-start;  ">
+					<img src="../assets/images/anmaya.jpg" alt="anmaya">
+					<h2>Anmaya Agarwal</h2>
+					<h4><i>"You need to accept the fact that you’re not the best and have the will to strive to be better than the rest."<br><br> - Roronoa Zoro </i></h4>
+				</div>
+				<div class="makerscell" style="flex:1; justify-content: flex-start;  ">
+					<img src="../assets/images/saketh.jpg" alt="saketh">
+					<h2>Saketh Mantha</h2>
+					<h4><i>"People's lives don't end when they die it ends when they lose faith"<br><br> - Uchiha Itachi </i></h4>
+				</div>
+			</div>
+				
+		</div>
+		
+		<!------------------------------------------------ Contact Us -------------------------------------------------------->
+		
+		<div class="contact" id="contact">
+			
+			<div id="particles-js1"></div>
+			
+			<div class="contactrow">
+			
+				<div class="contactcell" style="flex:2.5; justify-content: flex-end; margin-bottom: 23.7%;  ">
+					<a href="https://www.youtube.com/channel/UCOYEJ5w4bj9gFJnJQcNBW6Q" target="_blank">
+						<img src="../assets/images/yt.png" alt="yt" width="40px" style="position: relative ; left:50%;  ">
+					</a>
+					<a href="https://www.instagram.com/art_by_zoro/" target="_blank">
+						<img src="../assets/images/instagram.png" alt="insta" width="40px" style="position: relative ; left:50%;  ">
+					</a>
+				</div>
+				
+				<div class="contactcell" style="flex:2.5; font-size: 18px;  ">
+					<hr style="border: 1px solid black; background-color: black;">
+					<h1>Contact Us</h1>
+					<br>
+					<p style="padding-top: 5%;"><b>Find us on social media, <br>connect with us through this form, <br> or write directly <br><br> </b></p>	
+					<h3>ikigaistudios1856@gmail.com</h3>
+				</div>
+				
+				<div class="contactcell" style="flex:5; justify-content: flex-end; margin-bottom: 7.5%;  ">
+					<form action="http://localhost/project/html/formvalidation.php" method="post" id="form">
+						
+						<input type="text" placeholder="Name *" id="name" name="name" minlength="3" oninvalid="this.setCustomValidity('Please enter your Name')" oninput="setCustomValidity('')" required>
+						
+						<input type="text" placeholder="E-Mail *" id="email" name="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" oninvalid="this.setCustomValidity('Please enter a valid Email Address')" oninput="setCustomValidity('')" required>
+						
+						<input type="number" placeholder="Phone Number (10 digits) *" min="1000000000" max="9999999999" id="phone" name="phone" oninvalid="this.setCustomValidity('Please enter a valid 10 Digit Phone Number')" oninput="setCustomValidity('')" required>
+						
+						<input type="text" placeholder="Subject *" id="subject" name="subject" minlength="3" oninvalid="this.setCustomValidity('Please enter a subject')" oninput="setCustomValidity('')" required>
+						
+						<textarea placeholder="Message *" style="height: 20vh;" wrap="hard" id="message" name="message" oninvalid="this.setCustomValidity('Please enter the enquiry you want to ask')" oninput="setCustomValidity('')" required></textarea>
+						
+						<input type="submit" value="S U B M I T" id="submit" name="submit" >
+					</form>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<!--<script>
+			
+			function test()
+			{
+				/*document.getElementById("email").setAttribute("style","border=3px solid red;");*/
+			}
+			
+		</script>-->
+		
+		<!--<style>
+			#form:invalid>#submit{
+				pointer-events: none;
+			}
+			#email:focus:required:invalid{
+				border: 3px solid red;
+			}
+			#email:required:valid{
+				border: 3px solid green;
+			}
+		</style>-->
+		
+		<script src="../js/particles.js"></script>
+		<script src="../js/app1.js"></script>
+		
+		<!------------------------------------------ Footer -------------------------------------------------------->
+		
+		<footer>
+		
+			<div class="footerrow">
+				
+				<div class="footercell" style="flex:1; justify-content: flex-start;  border-top: 2px solid white;">
+					<!--<hr style="border: 1px solid white; background-color: black;">-->
+					<br>
+					<h4>Ikigai Studios</h4>
+					<br>
+					<h5>ikigaistudios1856@gmail.com</h5>
+				</div>
+				
+				<div class="footercell" style="flex:1; justify-content: flex-start; border-top: 2px solid white;">
+					<!--<hr style="border: 1px solid white; background-color: black;">-->
+					<br>
+					<h4>Sitemap</h4>
+					<br>
+					<a href="index.html#home"><h5>HOME</h5></a>
+					<a href="index.html#about"><h5>ABOUT</h5></a>
+					<a href="index.html#portfolio"><h5>PORTFOLIO</h5></a>
+					<a href="index.html#makers"><h5>THE MAKERS</h5></a>
+					<a href="index.html#contact"><h5>CONTACT US</h5></a>
+				</div>
+				
+				<div class="footercell" style="flex:2; justify-content: flex-start;  border-top: 2px solid white;">
+					<!--<hr style="border: 1px solid white; background-color: black;">-->
+					<br>
+					<h4>Social Links</h4>
+					<br>
+					<a href="https://www.youtube.com/channel/UCOYEJ5w4bj9gFJnJQcNBW6Q" target="_blank" style="width: 100%;">
+						<h5>YOUTUBE</h5>
+					</a>
+					<a href="https://www.instagram.com/art_by_zoro/" target="_blank">
+						<h5 style="width: auto;">INSTAGRAM</h5>
+					</a>
+				</div>
+				
+			</div>
+			<div class="footerrow">
+				<div class="footercell" style="flex:10; justify-content: center; padding-left: 47%; margin-left: 0%; padding-top: 3.5%;">
+					<img src="../assets/images/ikigai_icon_footer.png" width="15%" alt="">	
+				</div>
+			</div>
+			<br>
+				<h4 style="text-align: center; font-family:  'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'; color: rgba(165,165,165,1.00);">© Ikigai Studios 2021 - All rights reserved</h4>
+			<br>
+			
+		</footer>
+		
+	</div>
+	
+</body>
+
+</html>

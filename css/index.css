@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/* ------------------- Main Flexbox ------------------- */
+ 
+.main{
+	display: flex;
+	flex-direction: column;  
+}
+
+/* ------------------- Hero Image ------------------- */
+
+.hero{
+	height: 100vh;
+}
+
+.hero img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+  
+.centered {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 20px;
+	font-size: 6.5vw; 
+	border: 5px solid rgba(255, 146, 181, 1);;
+	color: rgba(255, 146, 181, 1);
+	font-family: 'Playfair Display', serif;
+	/*top: 75%;
+	left: 75%;
+	right: -20%;*/
+	/*top: 81%;
+	left: 50%;*/
+	top : 50%;
+	left : 50%;
+	/*top: 50%;
+	left: 75%;
+	right: -20%;*/
+	width: auto;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+}
+
+#particles-js{
+	position: absolute;
+	/*height: 100vh;
+	width: inherit;*/
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+  
+/* ------------------- About ------------------- */
+
+.about{
+	/*padding: 6% 15% ;*/
+	padding: 6% 15% 12%;
+	background-color: #fefffe;
+}
+
+.aboutcolumn{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.aboutcolumn img{
+	width: 30vw;
+}
+
+.aboutrow{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.aboutcell{
+	flex-grow: 4;
+	padding-right: 20%;
+}
+
+.aboutcell h1{
+	font-family: 'Playfair Display', serif;
+	color: #BA4C9F;
+}
+
+.aboutcell p{
+	text-align: justify;
+	line-height: 25px;
+	font-size: 18px;
+}
+
+/* ------------------- Portfolio ------------------- */
+
+
+.portfolio{
+	/*padding: 6% 0% 0% ;*/
+	background-color: #fefffe;
+}
+
+.portfoliorow{
+	display: flex;
+	flex-direction: row;
+}
+
+.portfoliocell{
+	flex:1;
+	height: 55vh;
+	overflow: hidden;
+	width: 50%;
+	position: relative;
+}
+
+.portfoliocell img{
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+	/*transform: scale(1);
+	transition: transform 3s, filter 3s ease-in-out;
+  	filter: brightness(100%);*/
+}
+
+/*
+.portfoliocell img:hover {
+	transform: scale(1.5);
+	filter: brightness(50%);
+}
+*/
+
+.showname{
+	position: absolute;
+	color: white;
+	top: 0;
+	left: 0;
+	font-size: 2.5vw;
+	opacity: 0;
+}
+
+.showname a{
+	position: relative;
+	top: 5vh;
+	left: 3vw;
+	width: auto;
+	height: auto;
+	/*transform: translate(-50%, -50%);*/
+	text-decoration: none;
+	padding: 7px;
+	font-size: 2vw; 
+	border: 5px solid white;;
+	color: white;
+	font-family: 'Playfair Display', serif;
+}
+
+/*--------------------- Makers -----------------------------*/
+
+.makers{
+	padding: 5% 12.55% 0%;
+	background-color: #fefffe;
+	width: inherit;
+	height: 95vh;
+}
+
+.makersheading{
+	text-align: center;
+	color: #BA4C9F;
+	padding-bottom: 6%;
+}
+
+.makersrow{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex: 3;
+	width: 100%;
+}
+
+.makerscell{
+	display: flex;
+	left: auto;
+	top: auto;
+	overflow: hidden;
+	border-radius: 20px;
+	width: 100%;
+	/*height: 100%;*/
+	margin: 0% 5%;
+	box-shadow: 5px 5px 5px grey;
+	justify-content: center;
+	flex-direction: column;
+	transform: scale(1);
+	transition: transform 1s ease-in-out;
+}
+
+.makerscell:hover{
+	transform: scale(1.2);
+	transition: transform 1s ease-in-out;
+}
+
+.makerscell img{
+	width: 100%;
+	object-fit: cover;
+	transform: scale(1);
+	transition : filter 1s ease;
+}
+
+.makerscell img:hover{
+	filter: grayscale(100%);
+	transform: scale(1);
+	transition : filter 1s ease;
+}
+
+.makerscell h2{
+	padding: 10% 0%;
+	text-align: center;
+	transition: transform 1s ease-in-out;
+	transform: scale(1);
+}
+
+.makerscell h2:hover{
+	transform: scale(1);
+	transition: transform 1s ease-in-out;
+}
+
+.makerscell h4{
+	padding: 0% 5% 10%;
+	text-align: center;
+	transform: scale(1);
+	transition: transform 1s ease-in-out;
+}
+
+.makerscell h4:hover{
+	transform: scale(1);
+	transition: transform 1s ease-in-out;
+}
+
+/*--------------------- Contact Us -----------------------------*/
+
+.contact{
+	background-image: url("../assets/images/contact.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contactrow{
+	position: relative;
+	height: inherit;
+	width: inherit;
+	flex: 10;
+	align-content: center;
+	display: flex;
+	z-index: 10;
+	flex-direction: row;
+}
+
+.contactcell{
+	display: flex;
+	left: auto;
+	top: auto;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.contactcell p{
+	font-family:  'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+}
+
+.contactcell h3{
+	font-family:  'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+}
+
+.contactcell img{
+	margin: 2%;
+}
+
+.contactcell input, textarea{
+	position: relative;
+	left: 10%;
+	background-color: rgb(0,0,0,0.5);
+	height: 4.5vh;
+	border-style: solid;
+	border-bottom: none;
+	border-right: none;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	color: white;
+	font-size: 18px;
+	width: 50%;
+	margin-top: 0.5%;
+}
+
+::placeholder{
+	color: white;
+	opacity: 1;
+	padding-left: 10px;
+	padding-top: 7px;
+	font-size: 18px;
+}
+
+#submit{
+	border-color: hsl(0, 0%, 15%);
+	background-color: hsl(0, 0%, 27%);
+	color: rgba(131,131,131,1.00);
+	transition: color 1s ease;
+}
+
+#submit:hover{
+	color: white;
+	transition: color 1s ease;
+}
+
+#particles-js1{
+	position: absolute;
+	width: 100%;
+	height: inherit;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

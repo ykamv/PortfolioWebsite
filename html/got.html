@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="../css/shows.css">
+	<link rel="stylesheet" href="../css/navbar.css">
+	<link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/shows.js"></script>
+	<link rel = "icon" href = "../assets/images/ikigai_icon1.png" type = "image/x-icon">
+</head>
+
+<body>
+
+    <!--------------------------- Navbar --------------------------------------->
+
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+        <div class="line" style="background-color: aliceblue;"></div>
+        <div class="line" style="background-color: aliceblue;"></div>
+        <div class="line" style="background-color: aliceblue;"></div>
+    </label>
+    <div class="menu">
+        <div class="menu-inner">
+            <ul class="menu-nav">
+                <li class="menu-nav-item"><a class="menu-nav-link" href="index.html#home"><span>
+                            <div>Home</div>
+                        </span></a></li>
+                <li class="menu-nav-item"><a class="menu-nav-link" href="index.html#about"><span>
+                            <div>About</div>
+                        </span></a></li>
+                <li class="menu-nav-item"><a class="menu-nav-link" href="index.html#portfolio"><span>
+                            <div>Portfolio</div>
+                        </span></a></li>
+				<li class="menu-nav-item"><a class="menu-nav-link" href="index.html#makers"><span>
+                            <div>The Makers</div>
+                        </span></a></li>
+                <li class="menu-nav-item"><a class="menu-nav-link" href="index.html#contact"><span>
+                            <div>Contact Us</div>
+                        </span></a></li>
+            </ul>
+            <div class="gallery">
+                <div class="title">
+                    <p>Ikigai Studios</p>
+                </div>
+                <div class="images">
+                    <a class="image-link" href="aot.html">
+                        <div class="image" data-label="Attack on Titan">
+							<img src="../assets/images/AOT/Levi_bridge.png" alt="Attack on Titan">
+						</div>
+                    </a>
+                    <a class="image-link" href="jujutsu.html">
+                        <div class="image" data-label="Jujutsu Kaisen">
+							<img src="../assets/images/Jujutsu/Jujutsu_1.jpg" alt="Jujutsu Kaisen">
+						</div>
+                    </a>
+                    <a class="image-link" href="got.html">
+                        <div class="image" data-label="Game of Thrones">
+							<img src="../assets/images/GOT/game_of_thrones_1.jpg" alt="Game of Thrones">
+						</div>
+                    </a>
+                    <a class="image-link" href="peaky.html">
+                        <div class="image" data-label="Peaky Blinders">
+							<img src="../assets/images/Peaky/peaky_1.jpg" alt="Peaky Blinders">
+						</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script>
+		function hideMenu()
+		{
+			let menuOpen = document.querySelector('#burger-toggle').checked;
+
+			if(menuOpen = true)
+			{
+				document.querySelector('#burger-toggle').checked = false;
+			}
+		}
+		window.addEventListener("scroll", hideMenu);
+	
+	</script>
+
+	<!------------------------------------- Hero Image ------------------------------------------------------->
+	
+    <div class="hero">
+        <div class="container0">
+            <div id="text1" title="Game of Thrones">Game of Thrones</div>
+            <div id="text2" title="" style="font-family: 'Taviraj', serif ; font-size: 3vw;">A Song of Ice and Fire</div>
+        </div>
+
+        <img src="../assets/images/GOT/background2.gif" alt="something" class="hero">
+
+    </div>
+
+	<script>
+        let text1 = document.getElementById("text1");
+        let text2 = document.getElementById("text2");
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            console.log(value);
+            text1.style.left = value * -.1 + '%';
+            text2.style.left =  value * .1 + '%';
+        })
+	</script>
+	
+	<!------------------------------------- Main ------------------------------------------------------------>
+	
+    <div class="content_bg">
+		
+        <div class="content">
+			
+			<!-------------------------------- Heading --------------------------------------------------->
+			
+            <div class="heading_center">
+                <h1 class="text3">Game of Thrones</h1>
+                <div class="border"></div>
+            </div>
+			
+			<!-------------------------------- Ratings --------------------------------------------------->
+            
+            <div class="stats">
+                <div id="s1">IMDb : <b>9.2</b></div>
+                <div id="s2">Rotten Tomatoes : <b>89%</b></div>
+                <div id="s3">Seasons : <b>8</b></div>
+                <div id="s4">MEMBERS : <b>10,000,000</b></div>
+            </div>
+
+			<!-------------------------------- Synopsis --------------------------------------------------->
+			
+            <div class="container1">
+                
+				<div>
+					<img src="../assets/images/GOT/game_of_thrones_2.jpg" alt="" style="height: 460px;width: 360px; padding-top: 18%;">
+                </div>
+                <div>
+                    <h1>SYNOPSIS</h1><br>
+                    <p style="text-align: justify">Years after a rebellion spurred by a stolen bride to be and the blind ambitions of a mad King, Robert of the house Baratheon (Mark Addy) sits on the much desired Iron Throne. In the mythical land of Westeros, nine noble families fight for every inch of control and every drop of power. The King's Hand, Jon Arryn (Sir John Standing), is dead. And Robert seeks out his only other ally in all of Westeros, his childhood friend Lord Eddard "Ned" Stark. The solemn and honorable Warden of the North is tasked to depart his frozen sanctuary and join the King in the capital of King's Landing to help the now overweight and drunk Robert rule. However, a letter in the dead of night informs "Ned" that the former Hand was murdered, and that Robert will be next. So noble Ned goes against his better desires in an attempt to save his friend and the kingdoms. But political intrigue, plots, and murders lead to a secret that could tear the Seven Kingdoms apart. And soon Eddard will find out what happens when you play the Game of Thrones.
+					<br><br>
+					Game of Thrones attracted a record viewership and has a broad, active, and international fan base. Critics have praised the series for its acting, complex characters, story, scope, and production values. The series received 59 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018 and 2019. Its other awards and nominations include three Hugo Awards for Best Dramatic Presentation, a Peabody Award, and five nominations for the Golden Globe Award for Best Television Series – Drama.
+					</p>
+                </div>
+				
+            </div>
+
+			<!-------------------------------- Voice Actors --------------------------------------------------->
+			
+            <div class="voice_act">
+                <h1>CAST</h1>
+            </div>
+            <div class="container2">
+                
+				<div class="flex">
+                    <img src="../assets/images/GOT/jon.jpg" alt="Jon Snow">
+                    <p><a href="https://gameofthrones.fandom.com/wiki/Jon_Snow" target="_blank">Jon Snow</a></p>
+                    <p><a href="https://en.wikipedia.org/wiki/Kit_Harington" target="_blank">Kit Harrington</a></p>
+                    <img src="../assets/images/GOT/jon1.jpg" alt="Kit Harrington">
+                </div>
+				
+                <div class="flex">
+                    <img src="../assets/images/GOT/tyrion.jpg" alt="Tyrion Lannister">
+                    <p><a href="https://gameofthrones.fandom.com/wiki/Tyrion_Lannister" target="_blank">Tyrion Lannister</a></p>
+                    <p><a href="https://en.wikipedia.org/wiki/Peter_Dinklage" target="_blank">Peter Dinklage</a></p>
+                    <img src="../assets/images/GOT/tyrion1.jpg" alt="Peter Dinklage">
+                </div>
+                
+				<div class="flex">
+                    <img src="../assets/images/GOT/jamie.jpg" alt="Jamie Lannister">
+                    <p><a href="https://gameofthrones.fandom.com/wiki/Jaime_Lannister" target="_blank">Jamie Lannister</a></p>
+                    <p><a href="https://en.wikipedia.org/wiki/Nikolaj_Coster-Waldau" target="_blank">Nikolaj Coster-Waldu</a></p>
+                    <img src="../assets/images/GOT/jamie1.jpg" alt="Nikolaj Coster-Waldu">
+                </div>
+                
+				<div class="flex">
+                    <img src="../assets/images/GOT/danny.jpg" alt="Daenerys Targaryen">
+                    <p><a href="https://gameofthrones.fandom.com/wiki/Daenerys_Targaryen" target="_blank">Daenerys Targaryen</a></p>
+                    <p><a href="https://en.wikipedia.org/wiki/Emilia_Clarke" target="_blank">Emilia Clarke</a></p>
+                    <img src="../assets/images/GOT/danny1.jpg" alt="Emilia Clarke">
+                </div>
+
+            </div>
+			
+			<!-------------------------------- Slideshow --------------------------------------------------->
+			
+			<div class="container4">
+                <div class="slider">
+					<img class="slider1" src="../assets/images/GOT/game_of_thrones_4.jpg" alt="" >
+					<img class="slider2" src="../assets/images/GOT/game_of_thrones_5.jpg" alt="" >
+					<img class="slider3" src="../assets/images/GOT/game_of_thrones_6.jpg" alt="" >
+					<img class="slider4" src="../assets/images/GOT/game_of_thrones_4.jpg" alt="" >
+                </div>
+            </div>
+			
+			<!-------------------------------- Videos --------------------------------------------------->
+			
+            <div class="video">
+                <h1>PROMOTIONAL VIDEOS</h1>
+            </div>
+            <div class="container3">
+                
+				<iframe width="520" height="340" src="https://www.youtube.com/embed/R1fsTYP-N0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+                <iframe width="520" height="340" src="https://www.youtube.com/embed/uuDu43Gnyts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div>
+
+			<!-------------------------------- Playlist --------------------------------------------------->
+
+			<div class="audioheading">
+                <h1>PLAYLIST</h1>
+            </div>
+			
+            <div class="audio">
+								
+                <div class="col">
+					<br>
+                    <h2>Opening Theme</h2>
+					<br>
+                    <div>
+                        <audio src="../assets/song/got/opening_theme.mp3" id="op1"></audio>
+                        <button class="btn" onclick="stop();playAudio1()">
+							<img id="play1" src="../assets/images/Icons/play.png" alt="play1" style="width: 30px;">
+						</button>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp; Title Track by Ramin Djawadi</p>
+                    </div>
+                    <div>
+                        <audio src="../assets/song/got/light_of_the_seven.mp3" id="op2"></audio>
+                        <button class="btn" onclick="stop();playAudio2()">
+							<img id="play2" src="../assets/images/Icons/play.png" alt="play2" style="width: 30px;">
+						</button>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp; Light of the Seven by Ramin Djawadi</p>
+                    </div>
+                </div>
+                
+				<div class="col">
+					<br>
+                    <h2>Closing Theme</h2>
+					<br>
+                    <div>
+                        <audio src="../assets/song/got/hear_me_roar.mp3" id="op3"></audio>
+                        <button class="btn" onclick="stop();playAudio3()">
+							<img id="play3" src="../assets/images/Icons/play.png" alt="play3" style="width: 30px;">
+						</button>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp; Hear me Roar by Ramin Djawadi</p>
+                    </div>
+                    <div>
+                        <audio src="../assets/song/got/last_of_the_starks.mp3" id="op4"></audio>
+                        <button class="btn" onclick="stop();playAudio4()">
+							<img id="play4" src="../assets/images/Icons/play.png" alt="play4" style="width: 30px;">
+						</button>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp; Last of the Starks by Ramin Djawadi</p>
+                    </div>
+                </div>
+				
+            </div>
+			
+			<!-------------------------------- Future News --------------------------------------------->
+			
+			<aside style="padding-bottom: 10%; padding-top: 5%;">
+			
+				<div class="container1">
+					<div>
+						<img src="../assets/images/GOT/game_of_thrones_7.jpg" alt="" style="height: 460px;width: 360px; padding-top: 40%;">
+					</div>
+					<div style="padding-bottom: 5%;">
+						<h1>Future News</h1><br>
+						<h2>House of Dragons</h2><br>
+						<h3>Release Date - 1 January 2022</h3><br>
+						<hr style="border: 1px solid black; background: black;"><br>
+						<p style="text-align: justify">
+							House of the Dragon takes place two centuries before the War of the Five Kings, focusing on the Dance of the Dragons. The show is based on George R. R. Martin's Fire and Blood, along with the novella The Princess and the Queen and the novelette The Rogue Prince.
+							<br><br>
+							The Characters that will be introduced in the series are - 
+							<br><br>
+							Paddy Considine as King Viserys Targaryen. Viserys was chosen by the lords of Westeros to succeed the Old King, Jaehaerys Targaryen, at the Great Council at Harrenhal. A warm, kind, and decent man, Viserys only wishes to carry forward his grandfather’s legacy, but as we’ve learned from Game of Thrones, good men do not necessarily make for great kings.
+							<br><br>
+							Olivia Cooke as Alicent Hightower. She’s the daughter of Otto Hightower, the Hand of the King, and the most comely woman in the Seven Kingdoms. She was raised in the Red Keep, close to the king and his innermost circle; she possesses both a courtly grace and a keen political acumen.
+							<br><br>
+							Emma D’Arcy as Princess Rhaenyra Targaryen. The king’s first-born child. She is of pure Valyrian blood, and she is a dragonrider. Many would say that Rhaenyra was born with everything…but she was not born a man.
+						</p>
+					</div>
+				</div>
+				
+			</aside>
+			
+        </div>
+        
+    </div>
+    
+	<!----------------------------------------- Footer --------------------------------------------------------->
+	
+	<footer style="background: #0d1222">
+		
+			<div class="footerrow">
+				
+				<div class="footercell" style="flex:1; justify-content: flex-start;  border-top: 2px solid white;">
+					<!--<hr style="border: 1px solid white; background-color: black;">-->
+					<br>
+					<h4>Ikigai Studios</h4>
+					<br>
+					<h5>ikigaistudios1856@gmail.com</h5>
+				</div>
+				
+				<div class="footercell" style="flex:1; justify-content: flex-start; border-top: 2px solid white;">
+					<!--<hr style="border: 1px solid white; background-color: black;">-->
+					<br>
+					<h4>Sitemap</h4>
+					<br>
+					<a href="index.html#home"><h5>HOME</h5></a>
+					<a href="index.html#about"><h5>ABOUT</h5></a>
+					<a href="index.html#portfolio"><h5>PORTFOLIO</h5></a>
+					<a href="index.html#makers"><h5>THE MAKERS</h5></a>
+					<a href="index.html#contact"><h5>CONTACT US</h5></a>
+				</div>
+				
+				<div class="footercell" style="flex:2; justify-content: flex-start;  border-top: 2px solid white;">
+					<!--<hr style="border: 1px solid white; background-color: black;">-->
+					<br>
+					<h4>Social Links</h4>
+					<br>
+					<a href="https://www.youtube.com/channel/UCOYEJ5w4bj9gFJnJQcNBW6Q" target="_blank" style="width: 100%;">
+						<h5>YOUTUBE</h5>
+					</a>
+					<a href="https://www.instagram.com/art_by_zoro/" target="_blank">
+						<h5 style="width: auto;">INSTAGRAM</h5>
+					</a>
+				</div>
+				
+			</div>
+			<div class="footerrow">
+				<div class="footercell" style="flex:10; justify-content: center; padding-left: 47%; margin-left: 0%; padding-top: 3.5%;">
+					<img src="../assets/images/ikigai_icon_footer.png" width="15%" alt="">	
+				</div>
+			</div>
+			<br>
+				<h4 style="text-align: center; font-family:  'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'; color: rgba(165,165,165,1.00);">© Ikigai Studios 2021 - All rights reserved</h4>
+			<br>
+			
+		</footer>
+	
+	<script>
+        // let s1 = document.getElementById("s1");
+        // let s2 = document.getElementById("s2");
+        // let s3 = document.getElementById("s3");
+        // let s4 = document.getElementById("s4");
+        
+        // window.addEventListener('scroll', function (){
+        //     let value2 = window.scrollY;
+        //     if(value2>500 && value2<768){
+        //         s1.style.top =  60-value2*.1 + 'px';
+        //     }
+        // })
+    </script>
+</body>
+
+</html>

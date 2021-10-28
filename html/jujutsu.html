@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen</title>
+    <link rel="stylesheet" href="../css/shows.css">
+	<link rel="stylesheet" href="../css/navbar.css">
+	<link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/shows.js"></script>
+	<link rel = "icon" href = "../assets/images/ikigai_icon1.png" type = "image/x-icon">
+</head>
+
+<body>
+
+    <!--------------------------- Navbar --------------------------------------->
+
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+        <div class="line" style="background-color: aliceblue;"></div>
+        <div class="line" style="background-color: aliceblue;"></div>
+        <div class="line" style="background-color: aliceblue;"></div>
+    </label>
+    <div class="menu">
+        <div class="menu-inner">
+            <ul class="menu-nav">
+                <li class="menu-nav-item"><a class="menu-nav-link" href="index.html#home"><span>
+                            <div>Home</div>
+                        </span></a></li>
+                <li class="menu-nav-item"><a class="menu-nav-link" href="index.html#about"><span>
+                            <div>About</div>
+                        </span></a></li>
+                <li class="menu-nav-item"><a class="menu-nav-link" href="index.html#portfolio"><span>
+                            <div>Portfolio</div>
+                        </span></a></li>
+				<li class="menu-nav-item"><a class="menu-nav-link" href="index.html#makers"><span>
+                            <div>The Makers</div>
+                        </span></a></li>
+                <li class="menu-nav-item"><a class="menu-nav-link" href="index.html#contact"><span>
+                            <div>Contact Us</div>
+                        </span></a></li>
+            </ul>
+            <div class="gallery">
+                <div class="title">
+                    <p>Ikigai Studios</p>
+                </div>
+                <div class="images">
+                    <a class="image-link" href="aot.html">
+                        <div class="image" data-label="Attack on Titan">
+							<img src="../assets/images/AOT/Levi_bridge.png" alt="Attack on Titan">
+						</div>
+                    </a>
+                    <a class="image-link" href="jujutsu.html">
+                        <div class="image" data-label="Jujutsu Kaisen">
+							<img src="../assets/images/Jujutsu/Jujutsu_1.jpg" alt="Jujutsu Kaisen">
+						</div>
+                    </a>
+                    <a class="image-link" href="got.html">
+                        <div class="image" data-label="Game of Thrones">
+							<img src="../assets/images/GOT/game_of_thrones_1.jpg" alt="Game of Thrones">
+						</div>
+                    </a>
+                    <a class="image-link" href="peaky.html">
+                        <div class="image" data-label="Peaky Blinders">
+							<img src="../assets/images/Peaky/peaky_1.jpg" alt="Peaky Blinders">
+						</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script>
+		function hideMenu()
+		{
+			let menuOpen = document.querySelector('#burger-toggle').checked;
+
+			if(menuOpen = true)
+			{
+				document.querySelector('#burger-toggle').checked = false;
+			}
+		}
+		window.addEventListener("scroll", hideMenu);
+	
+	</script>
+
+	<!------------------------------------- Hero Image ------------------------------------------------------->
+	
+    <div class="hero">
+        <div class="container0">
+            <div id="text1" title="JUJUTSU KAISEN">JUJUTSU KAISEN</div>
+            <div id="text2" title="呪術廻戦">呪術廻戦</div>
+        </div>
+
+        <img src="../assets/images/Jujutsu/background1.gif" alt="something" class="hero">
+
+    </div>
+
+	<script>
+        let text1 = document.getElementById("text1");
+        let text2 = document.getElementById("text2");
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            // console.log(value);
+            text1.style.left = value * -.1 + '%';
+            text2.style.left =  value * .1 + '%';
+        })
+	</script>
+	
+	<!------------------------------------- Main ------------------------------------------------------------>
+	
+    <div class="content_bg">
+		
+        <div class="content">
+			
+			<!-------------------------------- Heading --------------------------------------------------->
+			
+            <div class="heading_center">
+                <h1 class="text3">JUJUTSU KAISEN</h1>
+                <div class="border"></div>
+            </div>
+			
+			<!-------------------------------- Ratings --------------------------------------------------->
+            
+            <div class="stats">
+                <div id="s1">SCORE : <b>8.74</b></div>
+                <div id="s2">RANKED : <b>#2</b></div>
+                <div id="s3">POPULARITY : <b>#1</b></div>
+                <div id="s4">MEMBERS : <b>1,479,399</b></div>
+            </div>
+
+			<!-------------------------------- Synopsis --------------------------------------------------->
+			
+            <div class="container1">
+                
+				<div>
+					<img src="../assets/images/Jujutsu/gojo_cover.png" alt="" style="height: 440px;width: 330px;">
+                </div>
+                <div>
+                    <h1>SYNOPSIS</h1><br>
+                    <p style="text-align: justify">Idly indulging in baseless paranormal activities with the Occult Club, high schooler Yuuji
+                        Itadori spends his days at either the clubroom or the hospital, where he visits his bedridden
+                        grandfather. However, this leisurely lifestyle soon takes a turn for the strange when he
+                        unknowingly encounters a cursed item. Triggering a chain of supernatural occurrences, Yuuji
+                        finds himself suddenly thrust into the world of Curses—dreadful beings formed from human malice
+                        and negativity—after swallowing the said item, revealed to be a finger belonging to the demon
+                        Sukuna Ryoumen, the "King of Curses."
+						<br><br>
+                    	Yuuji experiences first-hand the threat these Curses pose to society as he discovers his own
+                        newfound powers. Introduced to the Tokyo Metropolitan Jujutsu Technical High School, he begins
+                        to walk down a path from which he cannot return—the path of a Jujutsu sorcerer.
+					</p>
+                </div>
+				
+            </div>
+
+			<!-------------------------------- Voice Actors --------------------------------------------------->
+			
+            <div class="voice_act">
+                <h1>VOICE ACTORS</h1>
+            </div>
+            <div class="container2">
+                
+				<div class="flex">
+                    <img src="../assets/images/Jujutsu/gojo2.jpg" alt="Gojo Satorou">
+                    <p><a href="https://jujutsu-kaisen.fandom.com/wiki/Satoru_Gojo" target="_blank">Gojou, Satoru</a></p>
+                    <p><a href="https://myanimelist.net/people/513/Yuuichi_Nakamura" target="_blank">Nakamura, Yuuichi</a></p>
+                    <img src="../assets/images/Jujutsu/gojo.jpg" alt="Yuuichi_Nakamura">
+                </div>
+				
+                <div class="flex">
+                    <img src="../assets/images/Jujutsu/itadori.jpg" alt="Yuji_Itadori">
+                    <p><a href="https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori" target="_blank">Yuji, Itadori</a></p>
+                    <p><a href="https://myanimelist.net/people/30853/Junya_Enoki" target="_blank">Enoki, Junya</a></p>
+                    <img src="../assets/images/Jujutsu/itadori1.jpg" alt="Junya_Enoki">
+                </div>
+                
+				<div class="flex">
+                    <img src="../assets/images/Jujutsu/nobara1.jpg" alt="Nobara_Kugisaki">
+                    <p><a href="https://jujutsu-kaisen.fandom.com/wiki/Nobara_Kugisaki" target="_blank">Kugisaki, Nobara</a></p>
+                    <p><a href="https://myanimelist.net/people/11787/Asami_Seto" target="_blank">Seto, Asami</a></p>
+                    <img src="../assets/images/Jujutsu/nobara.jpg" alt="Asami_Seto">
+                </div>
+                
+				<div class="flex">
+                    <img src="../assets/images/Jujutsu/sukuna.jpeg" alt="Sukuna">
+                    <p><a href="https://jujutsu-kaisen.fandom.com/wiki/Sukuna" target="_blank">Ryoumen, Sukuna</a></p>
+                    <p><a href="https://myanimelist.net/people/95/Junichi_Suwabe" target="_blank">Suwabe, Junichi</a></p>
+                    <img src="../assets/images/Jujutsu/sukuna1.jpg" alt="Junichi_Suwabe">
+                </div>
+
+            </div>
+			
+			<!-------------------------------- Slideshow --------------------------------------------------->
+			
+			<div class="container4">
+                <div class="slider">
+					<img class="slider1" src="../assets/images/Jujutsu/Jujutsu_9.png" alt="" >
+					<img class="slider2" src="../assets/images/Jujutsu/Jujutsu_6.jpg" alt="" >
+					<img class="slider3" src="../assets/images/Jujutsu/Jujutsu_7.jpg" alt="" >
+					<img class="slider4" src="../assets/images/Jujutsu/Jujutsu_9.png" alt="" >
+                </div>
+            </div>
+			
+			<!-------------------------------- Videos --------------------------------------------------->
+			
+            <div class="video">
+                <h1>PROMOTIONAL VIDEOS</h1>
+            </div>
+            <div class="container3">
+                
+				<iframe width="520" height="340" src="https://www.youtube.com/embed/buIGU86FYFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="520" height="340" src="https://www.youtube.com/embed/gUXg7QYn_lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+			</div>
+
+			<!-------------------------------- Playlist --------------------------------------------------->
+
+			<div class="audioheading">
+                <h1>PLAYLIST</h1>
+            </div>
+			
+            <div class="audio">
+								
+                <div class="col">
+					<br>
+                    <h2>Opening Theme</h2>
+					<br>
+                    <div>
+                        <audio src="../assets/song/jujutsu/kaikaikitan.mp3" id="op1"></audio>
+                        <button class="btn" onclick="stop();playAudio1()">
+							<img id="play1" src="../assets/images/Icons/play.png" alt="play1" style="width: 30px;">
+						</button>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp; Kaikaikitan by Eve</p>
+                    </div>
+                    <div>
+                        <audio src="../assets/song/jujutsu/vivid_vice.mp3" id="op2"></audio>
+                        <button class="btn" onclick="stop();playAudio2()">
+							<img id="play2" src="../assets/images/Icons/play.png" alt="play2" style="width: 30px;">
+						</button>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp; Vivid Vice by Who-ya</p>
+                    </div>
+                </div>
+                
+				<div class="col">
+					<br>
+                    <h2>Closing Theme</h2>
+					<br>
+                    <div>
+                        <audio src="../assets/song/jujutsu/lost_in_paradise.mp3" id="op3"></audio>
+                        <button class="btn" onclick="stop();playAudio3()">
+							<img id="play3" src="../assets/images/Icons/play.png" alt="play3" style="width: 30px;">
+						</button>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp; Lost in Paradise by Ali ft. AKLO</p>
+                    </div>
+                    <div>
+                        <audio src="../assets/song/jujutsu/give_it_back.mp3" id="op4"></audio>
+                        <button class="btn" onclick="stop();playAudio4()">
+							<img id="play4" src="../assets/images/Icons/play.png" alt="play4" style="width: 30px;">
+						</button>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp; Give It Back by Cö shu Nie</p>
+                    </div>
+                </div>
+				
+            </div>
+			
+			<!-------------------------------- Future News --------------------------------------------->
+			
+			<aside style="padding-bottom: 10%; padding-top: 5%;">
+			
+				<div class="container1">
+					<div>
+						<img src="../assets/images/Jujutsu/Jujutsu_8.png" alt="" style="height: 460px;width: 360px; padding-top: 30%;">
+					</div>
+					<div style="padding-bottom: 5%;">
+						<h1>Future News</h1><br>
+						<h2>Jujutsu Kaisen 0 Movie</h2><br>
+						<h3>Release Date - December 24, 2021</h3><br>
+						<hr style="border: 1px solid black; background: black;"><br>
+						<p style="text-align: justify">
+							Yuuta Okkotsu is haunted. Ever since his childhood friend Rika died in a traffic accident, her ghost has stuck with him. But her spirit does not appear as the sweet girl Yuuta once knew. Instead, she manifests as a monstrous and powerful entity who fiercely protects him. Unable to control Rika's violent behavior, Yuuta is helpless to stop the bloodshed that follows from her brutal vengeance. As a result, when apprehended by "Jujutsu" sorcerers—the secret guardians of the world, trained to combat forces like Rika—Yuuta wishes to be completely isolated so that no one else can get hurt.
+							<br><br>
+							Yet his apprehender, the master sorcerer Satoru Gojou, has different plans for him: he will join Jujutsu High School and learn to control Rika in order to help people. Now a first-year at this school, Yuuta starts to learn Jujutsu arts and combat malignant beings. Alongside his new classmates Maki Zenin, a Jujutsu weapons expert; Toge Inumaki, a spellcaster who uses his words as weapons; and Panda, a seemingly walking and talking panda bear, Yuuta begins to find his place in the world and, for once, to feel comfortable with his abilities. However, as his training progresses, Yuuta comes to learn that the dangers of the Jujutsu world go far beyond that of wicked spirits.
+						</p>
+					</div>
+				</div>
+				
+			</aside>
+			
+        </div>
+        
+    </div>
+    
+	<!----------------------------------------- Footer --------------------------------------------------------->
+	
+	<footer style="background: #0d1222">
+		
+			<div class="footerrow">
+				
+				<div class="footercell" style="flex:1; justify-content: flex-start;  border-top: 2px solid white;">
+					<!--<hr style="border: 1px solid white; background-color: black;">-->
+					<br>
+					<h4>Ikigai Studios</h4>
+					<br>
+					<h5>ikigaistudios1856@gmail.com</h5>
+				</div>
+				
+				<div class="footercell" style="flex:1; justify-content: flex-start; border-top: 2px solid white;">
+					<!--<hr style="border: 1px solid white; background-color: black;">-->
+					<br>
+					<h4>Sitemap</h4>
+					<br>
+					<a href="index.html#home"><h5>HOME</h5></a>
+					<a href="index.html#about"><h5>ABOUT</h5></a>
+					<a href="index.html#portfolio"><h5>PORTFOLIO</h5></a>
+					<a href="index.html#makers"><h5>THE MAKERS</h5></a>
+					<a href="index.html#contact"><h5>CONTACT US</h5></a>
+				</div>
+				
+				<div class="footercell" style="flex:2; justify-content: flex-start;  border-top: 2px solid white;">
+					<!--<hr style="border: 1px solid white; background-color: black;">-->
+					<br>
+					<h4>Social Links</h4>
+					<br>
+					<a href="https://www.youtube.com/channel/UCOYEJ5w4bj9gFJnJQcNBW6Q" target="_blank" style="width: 100%;">
+						<h5>YOUTUBE</h5>
+					</a>
+					<a href="https://www.instagram.com/art_by_zoro/" target="_blank">
+						<h5 style="width: auto;">INSTAGRAM</h5>
+					</a>
+				</div>
+				
+			</div>
+			<div class="footerrow">
+				<div class="footercell" style="flex:10; justify-content: center; padding-left: 47%; margin-left: 0%; padding-top: 3.5%;">
+					<img src="../assets/images/ikigai_icon_footer.png" width="15%" alt="">	
+				</div>
+			</div>
+			<br>
+				<h4 style="text-align: center; font-family:  'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'; color: rgba(165,165,165,1.00);">© Ikigai Studios 2021 - All rights reserved</h4>
+			<br>
+			
+		</footer>
+	
+	<script>
+        // let s1 = document.getElementById("s1");
+        // let s2 = document.getElementById("s2");
+        // let s3 = document.getElementById("s3");
+        // let s4 = document.getElementById("s4");
+        
+        // window.addEventListener('scroll', function (){
+        //     let value2 = window.scrollY;
+        //     if(value2>500 && value2<768){
+        //         s1.style.top =  60-value2*.1 + 'px';
+        //     }
+        // })
+    </script>
+</body>
+
+</html>

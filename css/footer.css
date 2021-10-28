@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*--------------------- Footer ---------------------------*/
+
+footer{
+	/*height: 20vh;*/
+	background: hsl(0, 0%, 27%);
+	color: white;
+}
+
+
+.footerrow{
+	padding: 5vh 10vw 0px;
+	height: inherit;
+	width: inherit;
+	flex: 4;
+	justify-content: center;
+	align-content: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.footercell{
+	margin-left: 2vw;
+	display: flex;
+	left: auto;
+	top: auto;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.footercell a{
+	text-decoration: none;
+	font-family:  'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	color: rgba(131,131,131,1.00);
+}
+
+.footercell a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.footercell h5{
+	font-family:  'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	color: rgba(131,131,131,1.00);
+}
+
+.footercell h5:hover{
+	color: white;
+}
+
+.footercell h4{
+	font-family:  'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	color: white;
+}
